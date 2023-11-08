@@ -3,16 +3,16 @@
 <mat-slide-toggle (ngModelChange)="onChange($event)" [(ngModel)] ="isDarkTheme"></mat-slide-toggle> -->
 
 <div class="col-10 m-auto mt-5 mat-app-background">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 table1">
       <!-- Id Column -->
       <ng-container matColumnDef="id">
-        <th mat-header-cell *matHeaderCellDef> Id </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Id </th>
         <td mat-cell *matCellDef="let element"> {{element.id}} </td>
       </ng-container>
     
       <!-- Active Column -->
       <ng-container matColumnDef="active">
-        <th mat-header-cell *matHeaderCellDef> Activo </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Activo </th>
         <td mat-cell *matCellDef="let element"> 
           <mat-icon color="primary" *ngIf="element.active"> check_circle </mat-icon>
           <mat-icon style="color: #707b7c" *ngIf="!element.active"> cancel </mat-icon>         
@@ -21,52 +21,52 @@
     
       <!-- Name Column -->
       <ng-container matColumnDef="name">
-        <th mat-header-cell *matHeaderCellDef> Nombre </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Nombre </th>
         <td mat-cell *matCellDef="let element"> {{element.name}} </td>
       </ng-container>
     
       <!-- lastName Column -->
       <ng-container matColumnDef="lastName">
-        <th mat-header-cell *matHeaderCellDef> Apellido </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Apellido </th>
         <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
       </ng-container>
 
       <!-- nick Column -->
       <ng-container matColumnDef="nick">
-        <th mat-header-cell *matHeaderCellDef> Nick </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Nick </th>
         <td mat-cell *matCellDef="let element"> {{element.nick}} </td>
       </ng-container>
 
       <!-- profil Column -->
       <ng-container matColumnDef="profile">
-        <th mat-header-cell *matHeaderCellDef> Perfil </th>
+        <th mat-header-cell *matHeaderCellDef class="letra"> Perfil </th>
         <td mat-cell *matCellDef="let element"> {{element.profile}} </td>
       </ng-container>
 
       <!-- lastChange Column -->
       <ng-container matColumnDef="lastChange">
-        <th class="text-center" mat-header-cell *matHeaderCellDef> Ultimos Cambios </th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef class="letra"> Ultimos Cambios </th>
         <td class="text-center p-2" mat-cell *matCellDef="let element">
           <mat-menu #menu="matMenu" class="mat-app-background">
-            <div class="p-2">
+            <div class="p-2 letra">
               <p>
-                | inicio de sesion hoy a la 6:00 pm 
+                . Inicio de sesion hoy a la 6:00 pm 
               </p>
               <p>
-                | Registro de usuario
+                . Registro de usuario
               </p>
               <p>
-                | Inicio de sesion hace 2 días
+                . Inicio de sesion hace 2 días
               </p>
               <p>
-                | Inicio de sesion hoy
+                . Inicio de sesion hoy
               </p>
             </div>
           </mat-menu>
 
           <button
             class="w-50 m-auto"
-            style="border: 5px solid #53AFB5; border-radius: 10px;"
+            style="border: 1px solid #53AFB5; border-radius: 10px;"
             mat-menu-item
             [matMenuTriggerFor]="menu"
             aria-label="Más opciones"
@@ -80,7 +80,7 @@
 
       <!-- actions Column -->
       <ng-container matColumnDef="actions">
-        <th class="text-center" mat-header-cell *matHeaderCellDef> Acciones </th>
+        <th class="text-center" mat-header-cell *matHeaderCellDef class="letra"> Acciones </th>
         <td class="text-center" mat-cell *matCellDef="let element">
           <mat-menu #menu="matMenu">
             <button
@@ -116,7 +116,7 @@
         </td>
       </ng-container>
     
-      <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+      <tr mat-header-row *matHeaderRowDef="displayedColumns" style="background-color: #53AFB5; color: #fff;"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
 </div>

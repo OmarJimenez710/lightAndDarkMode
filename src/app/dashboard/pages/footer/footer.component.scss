@@ -1,3 +1,5 @@
+
+
 @keyframes slide {
 	0% { transform: translateX(0); }
 	25% { transform: translateX(0); }
@@ -12,16 +14,13 @@
 	100% { transform: translateX(-300%); }
 }
 
-.wrapper {
-	max-width: 1200px;
-	margin: 0 auto;
-}
-
 .slider {
 	position: relative;
 }
 
 .slides {
+	text-align: center;
+	font-size: 25px;
 	position: relative;
 	display: flex;
 	overflow: hidden;
@@ -29,7 +28,7 @@
 
 .slide {
     list-style: none;
-	width: 100vw;
+	width: 100%;
 	flex-shrink: 0;
 	animation-name: slide;
 	animation-duration: 20s;
@@ -37,28 +36,41 @@
 	animation-timing-function: linear;
 }
 
-@media only screen and (min-width: 1200px) {
-	.slide {
-		width: 1200px;
-	}
+.slideSec{
+	border: 10px solid #53AFB5;
+	border-radius: 30px 0px 0px 0px;
 }
 
 .bebida, .pastas, .pes{
-	background-color: #53AFB5;
-	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #53AFB5 !important; 
+	color: #fff !important;
 }
 
 .desyunos, .enchi{
-	background-color: #EF3946;
-	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #EF3946 !important;
+	color: #fff !important;
 }
 
 .carnes, .postres{
-	background-color: #F78F36;
-	color: #fff;
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #F78F36 !important;
+	color: #fff !important;
 }
 
 .hamburgesas, .entra{
-	background-color: #7E63AB;
-	color: #fff
+	font-size: 18px;
+	border-radius: 10px;
+	background-color: #7E63AB !important;
+	color: #fff !important;
+}
+
+.mexican{
+	font-size: 18px;
+	border-radius: 10px;
+	border: 2px solid #EF3946;
 }
