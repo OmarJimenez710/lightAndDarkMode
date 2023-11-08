@@ -1,0 +1,31 @@
+<form class="row"> 
+  <div class="m-5 col-4 p-5 bg-purple" style="border-radius: 10px;">
+    <input class="col-12 mt-4 mb-4 tecladoNumerico" value="{{paraInput}}"> 
+
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[0])">{{numeros[0]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[1])">{{numeros[1]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[2])">{{numeros[2]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="eliminar()">
+        <mat-icon> backspace </mat-icon>    
+    </button>
+ 
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[3])">{{numeros[3]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[4])">{{numeros[4]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[5])">{{numeros[5]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico">
+        <mat-icon> done </mat-icon>    
+    </button>
+
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[6])">{{numeros[6]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[7])">{{numeros[7]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[8])">{{numeros[8]}}</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico">
+        <mat-icon> key </mat-icon>    
+    </button>
+    
+    <button class="col-3 mt-1 mb-1 tecladoNumerico">Abc</button>
+    <button class="col-3 mt-1 mb-1 tecladoNumerico" (click)="aniadir(numeros[9])">{{numeros[9]}}</button>
+  </div>
+</form>
+
+

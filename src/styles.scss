@@ -3,4 +3,56 @@
 @import './assets/scss/themes.scss';
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+
+
+.bg-candy-red{
+    background-color: #EF3946 !important;
+}
+
+.color-candy-red{
+    color: #EF3946;
+}
+
+
+.bg-orange{
+    background-color: #F78F36 !important;
+}
+
+.color-orange{
+    color: #F78F36;
+}
+
+
+.bg-purple{
+    background-color: #7E63AB !important;
+}
+
+.color-purple{
+    color: #7E63AB;
+}
+
+
+.bg-blue-water{
+    background-color: #53AFB5 !important;
+}
+
+.color-blue-water{
+    color: #53AFB5;
+}
+
+
+.bg-gradient-black{
+    background-color: #5E5B65 !important;
+}
+
+.color-gradient-black{
+    color: #5E5B65;
+}
+
+.color-white{
+    color: #fff !important;
+}
+
+

@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { TableDosComponent } from './dashboard/pages/table-dos/table-dos.component';
 import { FooterModule } from './dashboard/pages/footer/footer.module'
+import { KeyboardModule } from './dashboard/pages/keyboard/keyboard.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterModule } from './dashboard/pages/footer/footer.module'
     TableModule,
     BrowserAnimationsModule,
     SharedModule,
-    FooterModule
+    FooterModule,
+    KeyboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
