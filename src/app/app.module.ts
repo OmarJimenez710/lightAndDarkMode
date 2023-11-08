@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { TableModule } from './dashboard/pages/table/table.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
+import { TableDosComponent } from './dashboard/pages/table-dos/table-dos.component';
+import { FooterModule } from './dashboard/pages/footer/footer.module'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TableDosComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     TableModule,
     BrowserAnimationsModule,
-    SharedModule
+    SharedModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

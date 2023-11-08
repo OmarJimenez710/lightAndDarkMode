@@ -1,0 +1,68 @@
+@keyframes slide {
+	0% { transform: translateX(0); }
+	25% { transform: translateX(0); }
+
+	30% { transform: translateX(-100%); }
+	55% { transform: translateX(-100%); }
+
+	60% { transform: translateX(-200%); }
+	85% { transform: translateX(-200%); }
+
+	90% { transform: translateX(-300%); }
+	100% { transform: translateX(-300%); }
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+    list-style: none;
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+}
+
+.bebida, .pastas, .pes{
+	background-color: #53AFB5;
+	color: #fff;
+}
+
+.desyunos, .enchi{
+	background-color: #EF3946;
+	color: #fff;
+}
+
+.carnes, .postres{
+	background-color: #F78F36;
+	color: #fff;
+}
+
+.hamburgesas, .entra{
+	background-color: #7E63AB;
+	color: #fff
+}
+
+.mexican{
+
+}

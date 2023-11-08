@@ -1,0 +1,27 @@
+<div class="row m-auto mt-5">
+    <div class="col-1 m-auto" *ngFor="let plato of PLATILLOS">
+        <button class="w-100 p-5" style="height: 50px;" mat-raised-button color="primary">
+            {{plato.nombre}}
+        </button>
+    </div>
+
+    <div class="wrapper col-12 mt-4 text-center mat-app-background" style="border: 5px solid #53AFB5; border-radius: 10px;">
+        <div class="slider" id="slider">
+          <ul class="slides">
+            <li class="slide">
+                <p>Come Todo por $186</p>
+            </li>
+            <li class="slide">
+                <p>Helados 2x1</p>
+            </li>
+            <li class="slide">
+                <p>Miercoles de bebidas</p>
+            </li>
+            <li class="slide">
+                <p>Si comes 15 tacos en menos de 15 min todo gratis</p>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+

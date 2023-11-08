@@ -29,7 +29,7 @@ $dark-theme-1Section: mat.define-dark-theme(
 $light-theme-2Section: mat.define-light-theme(
     (
         color: (
-            primary: mat.define-palette(mat.$amber-palette, 900),
+            primary: mat.define-palette(mat.$teal-palette, 300),
             accent: mat.define-palette(mat.$brown-palette, 400),
         ),
         typography: mat.define-typography-config(),
@@ -40,14 +40,13 @@ $light-theme-2Section: mat.define-light-theme(
 $dark-theme-2Section: mat.define-dark-theme(
     (
         color: (
-            primary: mat.define-palette(mat.$deep-orange-palette, 600),
+            primary: mat.define-palette(mat.$teal-palette, 300),
             accent: mat.define-palette(mat.$green-palette, A200),
         ),
         typography: mat.define-typography-config(),
         density: 0,
     )
 );
-
 
 .light-mode-1section {
     @include mat.all-component-themes($light-theme-1Section);

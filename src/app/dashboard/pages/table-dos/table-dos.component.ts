@@ -1,4 +1,4 @@
-import {Component, Inject } from '@angular/core';
+import { Component } from '@angular/core';
 
 export interface PeriodicElement {
   id: number;
@@ -22,13 +22,12 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {id: 10, active: true, name: "Dorian", lastName: 'Tobon', nick: 'FM', profile: 'CAJERO'},
 ];
 
-
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrls: ['./table.component.scss']
+  selector: 'app-table-dos',
+  templateUrl: './table-dos.component.html',
+  styleUrls: ['./table-dos.component.scss']
 })
-export class TableComponent{
+export class TableDosComponent {
   displayedColumns: string[] = ['id', 'active', 'name', 'lastName', 'nick', 'profile', 'lastChange', 'actions'];
   dataSource = ELEMENT_DATA;
 
@@ -50,3 +49,6 @@ export class TableComponent{
 
   panelOpenState = false;
 }
+
+
+

@@ -7,6 +7,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion'; 
 import { MatFormFieldModule } from '@angular/material/form-field'; 
 import { MatSelectModule } from '@angular/material/select'; 
+import { MatMenuModule } from '@angular/material/menu'; 
+import { MatButtonModule } from '@angular/material/button'; 
+import { MatCardModule } from '@angular/material/card'; 
 
 @NgModule({
   declarations: [],
@@ -20,7 +23,10 @@ import { MatSelectModule } from '@angular/material/select';
     MatIconModule,
     MatExpansionModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatMenuModule,
+    MatButtonModule,
+    MatCardModule
   ]
 })
 export class SharedModule { }
