@@ -1,89 +1,17 @@
-<!-- <div class="row m-auto mt-5">
-    <div class="col-1 m-auto" *ngFor="let plato of PLATILLOS">
-        <button class="w-100 p-5" style="height: 50px;" mat-raised-button class="blue-water">
-            {{plato.nombre}}
-        </button>
-    </div>
-</div>
-
 <div class="row m-auto mt-5">
-    <div class="wrapper col-12 mt-4 mb-4 text-center mat-app-background" style="border: 5px solid #53AFB5; border-radius: 10px;">
-        <div class="slider" id="slider">
-          <ul class="slides">
-            <li class="slide">
-                <p>Come Todo por $186</p>
-            </li>
-            <li class="slide">
-                <p>Helados 2x1</p>
-            </li>
-            <li class="slide">
-                <p>Miercoles de bebidas</p>
-            </li>
-            <li class="slide">
-                <p>Si comes 15 tacos en menos de 15 min todo gratis</p>
-            </li>
-          </ul>
-        </div>
-    </div>
-</div> -->
-
-
-<div class="row m-auto mt-5">
-    <button class="col-1 m-auto p-5 bg-blue-water color-white general" mat-raised-button>
-        Bebidas 
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-candy-red color-white general" mat-raised-button>
-        Desayunos
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-orange color-white general" mat-raised-button>
-        Carnes y aves 
-    </button>
-    
-    <button class="col-1 m-auto p-5 bg-purple color-white general" mat-raised-button>
-        Hamburgesas y sadwiches 
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-blue-water color-white general" mat-raised-button>
-        Pastas
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-candy-red color-white general" mat-raised-button>
-        Ensaladas 
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-orange color-white general" mat-raised-button>
-        Postres  
-    </button>
-    
-    <button class="col-1 m-auto p-5 bg-purple color-white general" mat-raised-button>
-        Entradas 
-    </button>
-
-    <button class="col-1 m-auto p-5 bg-blue-water color-white general" mat-raised-button>
-        Pescado  
-    </button>
-
-    <button class="col-1 m-auto p-5 mexican general" mat-raised-button>
-        Comida Méxicana 
+    <button *ngFor="let plato of PLATILLOS;" class="col-1 m-auto p-5 color-white general"
+      mat-raised-button
+      [ngStyle]="{backgroundColor: plato.color}"
+    >
+      {{plato.nombre}}
     </button>
 </div>
 
 <div class="row m-auto mt-1">
     <div class="slider col-11 m-auto mt-2 mb-4 mat-app-background slideSec" id="slider">
         <ul class="slides">
-          <li class="slide">
-            <p>Come Todo por $186</p>
-          </li>
-          <li class="slide">
-            <p>Helados 2x1</p>
-          </li>
-          <li class="slide">
-            <p>Miercoles de bebidas</p>
-          </li>
-          <li class="slide">
-            <p>Si comes 15 tacos en menos de 15 min todo gratis</p>
+          <li class="slide" *ngFor="let prom of PROMOCION">
+            <p>{{prom.prom}}</p>
           </li>
         </ul>
     </div>
