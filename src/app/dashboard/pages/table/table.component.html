@@ -3,7 +3,7 @@
       <!-- Id Column -->
       <ng-container matColumnDef="id">
         <th mat-header-cell *matHeaderCellDef class="letra"> Id </th>
-        <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+        <td mat-cell *matCellDef="let element" class="letra2"> {{element.id}} </td>
       </ng-container>
     
       <!-- Active Column -->
@@ -18,25 +18,25 @@
       <!-- Name Column -->
       <ng-container matColumnDef="name">
         <th mat-header-cell *matHeaderCellDef class="letra"> Nombre </th>
-        <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        <td mat-cell *matCellDef="let element" class="letra2"> {{element.name}} </td>
       </ng-container>
     
       <!-- lastName Column -->
       <ng-container matColumnDef="lastName">
         <th mat-header-cell *matHeaderCellDef class="letra"> Apellido </th>
-        <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+        <td mat-cell *matCellDef="let element" class="letra2"> {{element.lastName}} </td>
       </ng-container>
 
       <!-- nick Column -->
       <ng-container matColumnDef="nick">
         <th mat-header-cell *matHeaderCellDef class="letra"> Nick </th>
-        <td mat-cell *matCellDef="let element"> {{element.nick}} </td>
+        <td mat-cell *matCellDef="let element" class="letra2"> {{element.nick}} </td>
       </ng-container>
 
       <!-- profil Column -->
       <ng-container matColumnDef="profile">
         <th mat-header-cell *matHeaderCellDef class="letra"> Perfil </th>
-        <td mat-cell *matCellDef="let element"> {{element.profile}} </td>
+        <td mat-cell *matCellDef="let element" class="letra2"> {{element.profile}} </td>
       </ng-container>
 
       <!-- lastChange Column -->
@@ -44,7 +44,7 @@
         <th mat-header-cell *matHeaderCellDef class="letra"> Ultimos Cambios </th>
         <td class="p-2" mat-cell *matCellDef="let element">
           <mat-menu #menu="matMenu" class="mat-app-background">
-            <div class="p-2 letra">
+            <div class="p-2 letra2">
               <p>
                 . Inicio de sesion hoy a la 6:00 pm 
               </p>
@@ -61,8 +61,8 @@
           </mat-menu>
 
           <button
-            class="w-50"
-            style="border: 1px solid #53AFB5; border-radius: 10px;"
+            style="border: 1px solid #53AFB5; border-radius: 10px; width: 60%;"
+            class="letra2"
             mat-menu-item
             [matMenuTriggerFor]="menu"
             aria-label="Más opciones"
@@ -78,7 +78,7 @@
       <ng-container matColumnDef="actions">
         <th mat-header-cell *matHeaderCellDef class="letra"> Acciones </th>
         <td mat-cell *matCellDef="let element">
-          <mat-menu #menu="matMenu">
+          <mat-menu #menu="matMenu" >
             <button
               mat-menu-item
               aria-label="Otra acción"

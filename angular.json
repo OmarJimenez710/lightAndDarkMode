@@ -31,10 +31,11 @@
             ],
             "styles": [
               "src/styles.scss",
-              "bootstrap/dist/css/bootstrap-grid.min.css",
-              "bootstrap/dist/css/bootstrap-utilities.min.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {
